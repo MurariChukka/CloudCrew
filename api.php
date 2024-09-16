@@ -28,7 +28,7 @@ try {
     throw new \PDOException($e->getMessage(), (int)$e->getCode());
 }
 
-// Get the action from the request
+// Get the action from the request.
 $action = $_GET['action'] ?? '';
 
 switch ($action) {
